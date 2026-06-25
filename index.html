@@ -3,155 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bayan Portfolio</title>
+    <title>Bayan Almasri | Flutter Mobile Developer</title>
+    <meta name="description" content="Professional Flutter portfolio for Bayan Almasri, showcasing mobile apps, clean architecture, Firebase, and scalable product development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Bayan Almasri</div>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Bayan Almasri</a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            <button class="burger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </button>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hello I'm <span>Bayan Almasri</span></h1>
-            <p>Flutter Developer</p>
-            <a href="#projects" class="btn">My Projects</a>
-        </div>
-        <div class="hero-image">
-            <img src="images/logo.jpg" alt="Bayan Almasri">
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I am a skilled Flutter developer with two years of hands-on experience in building and deploying high-quality mobile applications. I am passionate about solving real-world problems through technology and can efficiently work with any development framework or technology stack. My adaptability, eagerness to learn, and strong problem-solving abilities enable me to thrive in dynamic work environments and deliver impactful solutions.</p>
-           
-                <div class="skills">
-                    <h3>My Skills</h3>
-                    <div class="skill-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Flutter</span>
-                        <span>Dart</span>
-                        <span>GetX, Bloc for State Management</span>
-                        <span>REST APIs</span>
-                        <span>Firebase Integration</span>
-                        <span>Converting Figma Designs</span>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Flutter Developer Portfolio</p>
+                <h1>Bayan Almasri</h1>
+                <h2>Flutter Mobile Developer</h2>
+                <p class="hero-description">
+                    I build polished, scalable mobile products with Flutter and Dart, combining clean architecture,
+                    production-ready integrations, and thoughtful user experience across Android and iOS.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="https://github.com/bayanalmasri1" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <div class="hero-stats">
+                    <span>3+ Years Experience</span>
+                    <span>Flutter &amp; Dart</span>
+                    <span>REST APIs</span>
+                    <span>Firebase</span>
+                    <span>Clean Architecture</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <img src="images/logo.jpg" alt="Bayan Almasri portrait">
+                    <div class="hero-card-content">
+                        <p>Focused on reliable mobile delivery</p>
+                        <strong>Cross-platform apps with scalable architecture</strong>
                     </div>
                 </div>
             </div>
-            <div class="about-image">
-                <img src="images/photo_2025-06-25_23-20-27.jpg" alt="About Bayan">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img src="images/wow syria.png" alt="Wow Syria">
-                <div class="project-info">
-                    <h3>Wow Syria</h3>
-                    <p>Flutter app for property/vehicle listings.</p>
-                    <a href="project1.html" class="btn project-link">View Project</a>
-                </div>
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">About Me</p>
+                <h2>Building mobile apps that are ready for real users</h2>
             </div>
-            
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="images/flower.png" alt="Flower Shop App">
-                <div class="project-info">
-                    <h3>Flower Shop App</h3>
-                    <p>E-commerce app for ordering flowers</p>
-                    <a href="project2.html" class="btn project-link">View Project</a>
-                </div>
+            <div class="about-layout">
+                <article class="surface-card about-story">
+                    <p>
+                        Flutter Mobile Developer with 3+ years of experience building scalable cross-platform mobile apps
+                        using Flutter and Dart. Experienced in Clean Architecture, BLoC/GetX state management, REST API
+                        integration, Firebase, localization, responsive UI, and production-ready mobile applications.
+                    </p>
+                    <p>
+                        I enjoy translating product ideas into reliable apps with reusable components, strong structure,
+                        and smooth experiences for Arabic and English users.
+                    </p>
+                </article>
+                <aside class="surface-card profile-panel">
+                    <img src="images/photo_2025-06-25_23-20-27.jpg" alt="Bayan Almasri profile photo">
+                    <div>
+                        <h3>Core Focus</h3>
+                        <p>Flutter architecture, user-centered UI, integrations, and shipping maintainable mobile products.</p>
+                    </div>
+                </aside>
             </div>
-            
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="images/apple/Group 19.png" alt="Apple Store">
-                <div class="project-info">
-                    <h3>Apple Store E-Commerce App</h3>
-                    <p>Developed a mobile marketplace for Apple products (iPhones, MacBooks, etc.)</p>
-                    <a href="project3.html" class="btn project-link">View Project</a>
-                </div>
-            </div>
-            
-            <!-- Project 4 -->
-        <!--  <div class="project-card">
-                <img src="images/project4.jpg" alt="Project 4">
-                <div class="project-info">
-                    <h3>Recipe Finder</h3>
-                    <p>Cooking recipes and meal planning app</p>
-                    <a href="project4.html" class="btn project-link">View Project</a>
-                </div>
-            </div> -->
-            
-            <!-- Project 5 -->
-            <div class="project-card">
-                <img src="images/task-management-32-1.png" alt="Project 5">
-                <div class="project-info">
-                    <h3>Task Manager</h3>
-                    <p>Productivity app for managing daily tasks</p>
-                    <a href="project5.html" class="btn project-link">View Project</a>
-                </div>
-            </div>
-            
-            <!-- Project 6 
-            <div class="project-card">
-                <img src="images/project6.jpg" alt="Project 6">
-                <div class="project-info">
-                    <h3>Weather App</h3>
-                    <p>Real-time weather forecasting application</p>
-                    <a href="project6.html" class="btn project-link">View Project</a>
-                </div>-->
-            </div>
-        </div>
-    </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-content">
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p><i class="fas fa-envelope"></i> byanalmsry36@gmail.com</p>
-                <p><i class="fas fa-phone"></i> +963 959324101</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/bayanalmasri1"><i class="fab fa-github"></i></a>
+            <div class="skills-block">
+                <div class="section-heading compact">
+                    <p class="eyebrow">Technical Skills</p>
+                    <h3>Modern mobile stack</h3>
+                </div>
+                <div class="chip-grid">
+                    <span class="chip">Flutter</span>
+                    <span class="chip">Dart</span>
+                    <span class="chip">Clean Architecture</span>
+                    <span class="chip">BLoC / Cubit</span>
+                    <span class="chip">GetX</span>
+                    <span class="chip">REST APIs</span>
+                    <span class="chip">Firebase</span>
+                    <span class="chip">SQLite / Local Storage</span>
+                    <span class="chip">Responsive UI</span>
+                    <span class="chip">RTL Support</span>
+                    <span class="chip">Localization</span>
+                    <span class="chip">Git</span>
+                    <span class="chip">Figma to Flutter</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>&copy; 2023 Bayan Almasri. All rights reserved.</p>
+        <section id="projects" class="section section-muted">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Mobile projects with practical impact</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="images/wow syria.png" alt="Wow Syria project cover">
+                    </div>
+                    <div class="project-info">
+                        <h3>Wow Syria</h3>
+                        <p>Marketplace experience for real estate and vehicle listings with WhatsApp contact and API-powered publishing flows.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>GetX</span>
+                            <span>HTTP</span>
+                        </div>
+                        <a href="project1.html" class="btn btn-small">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="images/flower.png" alt="Flower Shop App project cover">
+                    </div>
+                    <div class="project-info">
+                        <h3>Flower Shop App</h3>
+                        <p>Elegant commerce app for browsing flowers, handling authentication, and completing smooth mobile purchases.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>E-commerce</span>
+                        </div>
+                        <a href="project2.html" class="btn btn-small">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="images/apple/Group 19.png" alt="Apple Store E-Commerce App project cover">
+                    </div>
+                    <div class="project-info">
+                        <h3>Apple Store E-Commerce App</h3>
+                        <p>Product-focused shopping experience with clean browsing, secure checkout flow, and premium UI direction.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>UI/UX</span>
+                            <span>Payments</span>
+                        </div>
+                        <a href="project3.html" class="btn btn-small">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="images/Daisychool/Home_screen.png" alt="Medad School Management System cover">
+                    </div>
+                    <div class="project-info">
+                        <h3>Medad School Management System</h3>
+                        <p>Complete school management ecosystem with three Flutter applications for administration, teachers, and students.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>REST APIs</span>
+                            <span>Role-Based Access</span>
+                        </div>
+                        <a href="project_medad.html" class="btn btn-small">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="images/task-management-32-1.png" alt="Task Manager project cover">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Manager</h3>
+                        <p>Simple productivity app for creating, tracking, and completing tasks with a clean and focused mobile interface.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Local State</span>
+                            <span>Productivity</span>
+                        </div>
+                        <a href="project5.html" class="btn btn-small">View Project</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Contact</p>
+                <h2>Let&apos;s build something useful together</h2>
+            </div>
+            <div class="contact-layout">
+                <div class="surface-card contact-card">
+                    <h3>Available for freelance and full-time opportunities</h3>
+                    <p>
+                        If you need a Flutter developer who can take a feature from design to polished delivery, I&apos;d
+                        love to connect.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:byanalmsry36@gmail.com"><i class="fas fa-envelope"></i> byanalmsry36@gmail.com</a>
+                        <a href="tel:+963959324101"><i class="fas fa-phone"></i> +963 959324101</a>
+                        <a href="https://github.com/bayanalmasri1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="placeholder-link" aria-disabled="true"><i class="fab fa-linkedin"></i> LinkedIn Available on Request</a>
+                    </div>
+                </div>
+
+                <form class="surface-card contact-form">
+                    <label>
+                        <span>Your Name</span>
+                        <input type="text" placeholder="Enter your name" required>
+                    </label>
+                    <label>
+                        <span>Your Email</span>
+                        <input type="email" placeholder="Enter your email" required>
+                    </label>
+                    <label>
+                        <span>Your Message</span>
+                        <textarea placeholder="Tell me about your project" required></textarea>
+                    </label>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Bayan Almasri. Crafted with HTML, CSS, and JavaScript.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="java.js"></script>
 </body>
 </html>

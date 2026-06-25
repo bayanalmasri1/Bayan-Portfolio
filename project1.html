@@ -1,105 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wow Syria Project | Bayan Almasri</title>
+    <title>Wow Syria | Bayan Almasri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="logo">Bayan Almasri</div>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html#home" class="logo">Bayan Almasri</a>
             <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About Me</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact Me</a></li>
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            <button class="burger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </button>
         </nav>
     </header>
 
-    <main class="project-details">
-        <section class="project-header">
-            <div class="container">
-                <h1>Wow Syria App</h1>
-                <p class="subtitle">Flutter app for property/vehicle listings with WhatsApp contact, built with GetX &
-                    HTTP (published on Google Play).</p>
-                <div class="project-meta">
-                    <span><i class="fas fa-calendar-alt"></i> June 2023</span>
-                    <span><i class="fas fa-code"></i> Flutter</span>
+    <main class="project-shell">
+        <section class="project-hero">
+            <div class="project-hero-copy">
+                <p class="eyebrow">Featured Project</p>
+                <h1>Wow Syria</h1>
+                <p class="subtitle">
+                    Flutter marketplace app for property and vehicle listings, designed to connect users with local
+                    advertisers through clean browsing, listing management, and direct WhatsApp communication.
+                </p>
+                <div class="project-badges">
+                    <span>Flutter</span>
+                    <span>GetX</span>
+                    <span>HTTP APIs</span>
+                    <span>Google Play</span>
+                </div>
+                <div class="project-actions">
+                    <a href="index.html#projects" class="btn btn-secondary">Back to Projects</a>
+                    <a href="#" class="btn is-disabled" aria-disabled="true">GitHub Available on Request</a>
                 </div>
             </div>
+            <aside class="project-panel">
+                <img src="images/wow syria.png" alt="Wow Syria cover image">
+                <div class="project-panel-content">
+                    <p>Published marketplace experience covering residential and vehicle ads across Syrian cities.</p>
+                </div>
+            </aside>
         </section>
 
-        <section class="project-content">
-            <div class="container">
-                <div class="project-overview">
+        <section class="project-content-grid">
+            <div class="project-body">
+                <article class="surface-card">
                     <h2>Project Overview</h2>
-                    <p>Developed a mobile application for “Sawa Company” published on google play.
-                        This app allows users to post their own ads for properties(apartments with details like area,
-                        location, bedrooms, price) and
-                        vehicles (cars / trucks with color, model, year, price, location) for sale or rent across Syrian
-                        cities.
-                        Users can contact advertiser via WhatsApp directly from the app.
-                        Implemented Getx for state management and used the HTTP library for API integration</p>
-                    <div class="project-features">
-                        <h3>Key Features</h3>
-                        <ul>
-                            <li>Platform (Google Play)</li>
-                            <li>Core functionality (property/vehicle listings)</li>
-                            <li>User reviews and ratings system</li>
-                            <li>Key features (detailed ads, WhatsApp contact)</li>
-                            <li>Technical stack (Flutter, GetX, HTTP)</li>
+                    <p>
+                        Wow Syria was developed for a local company as a mobile platform where users can publish and
+                        explore real estate and vehicle listings for sale or rent. The app handles detailed item data,
+                        browsing by location, and quick communication with advertisers.
+                    </p>
+                    <p>
+                        The project highlights experience in mobile publishing flows, API integration, scalable state
+                        handling with GetX, and user-friendly listing experiences tailored to regional users.
+                    </p>
+                </article>
 
-                        </ul>
-                    </div>
-                </div>
+                <article class="surface-card">
+                    <h2>Key Features</h2>
+                    <ul class="feature-list">
+                        <li>Property and vehicle listing flows with structured detail fields.</li>
+                        <li>Location-aware browsing across multiple Syrian cities.</li>
+                        <li>Direct WhatsApp communication with advertisers.</li>
+                        <li>Dynamic data handling powered by HTTP API integration.</li>
+                        <li>Responsive mobile UI with practical publishing and discovery experience.</li>
+                    </ul>
+                </article>
 
-                <div class="project-gallery">
+                <section class="project-gallery">
                     <h2>App Screenshots</h2>
                     <div class="gallery-grid">
-                        <img src="images/wow1.jpg" alt="Wow Syria Home Screen">
-                        <img src="images/wow3 (2).jpg" alt="Wow Syria Reviews">
-                        <img src="images/wow2.jpg" alt="Wow Syria Location Details">
-                        <img src="images/wow3 (3).jpg" alt="Wow Syria Reviews">
-                        <img src="images/wow3 (4).jpg" alt="Wow Syria Reviews">
-                        <img src="images/wow3 (5).jpg" alt="Wow Syria Reviews">
-                        <img src="images/wow3 (6).jpg" alt="Wow Syria Map View">
-                        <img src="images/wow3 (1).jpg" alt="Wow Syria Map View">
-                         <img src="images/wow3 (13).jpg" alt="Wow Syria Map View">
-                        <img src="images/wow3 (7).jpg" alt="Wow Syria Map View">
-                        <img src="images/wow3 (8).jpg" alt="Wow Syria Map View">
-                        <img src="images/wow3 (9).jpg" alt="Wow Syria Map View">
-                        <img src="images/wow3 (10).jpg" alt="Wow Syria Map View">
-                        <img src="images/wow3 (12).jpg" alt="Wow Syria Map View">
-                       
-
+                        <figure class="gallery-item"><img src="images/wow1.jpg" alt="Wow Syria home screen"><figcaption>Home listing experience</figcaption></figure>
+                        <figure class="gallery-item"><img src="images/wow3 (2).jpg" alt="Wow Syria reviews screen"><figcaption>User reviews and details</figcaption></figure>
+                        <figure class="gallery-item"><img src="images/wow2.jpg" alt="Wow Syria details screen"><figcaption>Detailed listing view</figcaption></figure>
+                        <figure class="gallery-item"><img src="images/wow3 (3).jpg" alt="Wow Syria listing screen"><figcaption>Content browsing flow</figcaption></figure>
+                        <figure class="gallery-item"><img src="images/wow3 (4).jpg" alt="Wow Syria app screen"><figcaption>Additional marketplace state</figcaption></figure>
+                        <figure class="gallery-item"><img src="images/wow3 (5).jpg" alt="Wow Syria app screen"><figcaption>Category presentation</figcaption></figure>
+                        <figure class="gallery-item"><img src="images/wow3 (6).jpg" alt="Wow Syria map screen"><figcaption>Map and discovery</figcaption></figure>
+                        <figure class="gallery-item"><img src="images/wow3 (1).jpg" alt="Wow Syria app screen"><figcaption>Listing detail state</figcaption></figure>
                     </div>
-                </div>
-
-
-
-                <div class="project-links">
-                    <a href="#" class="btn"><i class="fab fa-github"></i> View on GitHub</a>
-                </div>
+                </section>
             </div>
+
+            <aside class="project-sidebar">
+                <article class="surface-card">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>GetX</span>
+                        <span>HTTP</span>
+                        <span>REST APIs</span>
+                    </div>
+                </article>
+                <article class="surface-card">
+                    <h3>Project Focus</h3>
+                    <p class="muted">Marketplace UX, state management, direct user communication, and practical mobile delivery.</p>
+                </article>
+            </aside>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Bayan Almasri. All rights reserved.</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Bayan Almasri. Crafted with HTML, CSS, and JavaScript.</p>
     </footer>
 
     <script src="java.js"></script>
 </body>
-
 </html>
