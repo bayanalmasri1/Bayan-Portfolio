@@ -423,6 +423,13 @@ textarea {
     transition: transform 0.35s ease;
 }
 
+.project-media img.logo-fit,
+.project-panel img.logo-fit {
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 0.9rem;
+}
+
 .project-card:hover .project-media img {
     transform: scale(1.02);
 }
