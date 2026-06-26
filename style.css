@@ -599,6 +599,30 @@ textarea {
     margin-top: 0.6rem;
 }
 
+.project-links-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.project-links-list a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 700;
+    padding: 0.85rem 1rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(99, 102, 241, 0.12);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-links-list a:hover {
+    transform: translateY(-2px);
+    border-color: rgba(99, 102, 241, 0.35);
+}
+
 .project-gallery {
     margin-top: 1rem;
 }
