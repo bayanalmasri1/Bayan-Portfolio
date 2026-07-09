@@ -424,10 +424,15 @@ textarea {
 }
 
 .project-media img.logo-fit,
+.project-media img.media-contain,
 .project-panel img.logo-fit {
     object-fit: contain;
     background: rgba(255, 255, 255, 0.96);
     padding: 0.9rem;
+}
+
+.project-media img.media-contain {
+    padding: 0.7rem;
 }
 
 .project-card:hover .project-media img {
